@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hex Selector Preview</title>
+</head>
+<body>
+    <header>Font Hex Tester</header>
+    <div class="wrapper">
+        
+        <div class="text_wrapper">
+            <div class="text_section_left">
+                <h1 class="sample_header">Text Sample</h1>
+                <p class="sample_text">Hi, and welcome to my color testing web app! I'm a designer and illustrator, so I needed a simple tool to help me quickly see what certain color choices looked like together. This little web app does exactly that. But why keep it to myself? Hopefully someone else can get a little use out of this! </p>
+                <p class="sample_text_second">This is the sample text. Enter your hex codes into the field to the right to get started! You can also flip the colors around to see what that looks like.</p>
+                <p class="sample_text_second">And if you look below, you'll notice that you can enter a Google font. This will give you a sort of live preview of what certain fonts will look like with your design palette!</p>
+                <p class="sample_text_second">This tool only works with Google Fonts right now, but that might change in the future.</p>
+                <p class="sample_text_second">Happy Designing!</p>
+            </div>
+            <div class="sample_input_field">
+                <div class="sample_title">
+                    <input type="text" name="sample_title" id="sample_title_input">
+                    <button type="button" id="title_button">Update title!</button>
+                </div>
+                <div class="sample_body">
+                    <input type="text" name="sample_body" id="sample_body_input">
+                    <button type="button" id="body_button">Update text!</button>
+                </div>
+
+                <label for="font_input">Enter the Google Font you want to preview (Please Use Title Case, As Seen Here).</label>
+                <input type="text" name="font_input" id="font_input" placeholder="Enter Google Font Name">
+                <button onclick="changeFont()" type="button" class="font_change">Change Font</button>
+            </div>
+        </div>
+
+        <div class="color_wrapper">
+            <div class="color_window">
+                <div class="color_window2"></div>
+            </div>
+            
+            <div class="color_input">
+                <div class="input_field">
+                    <div>#<input type="text" placeholder="#5c5c5c" name="color_hex" id="hex_input"></div>
+                    <label for="hex_input">Input Text Hex Code Here</label>        
+
+                    <div>#<input type="text" placeholder="#5c5c5c" name="color_hex2" id="hex_input2"></div>
+                    <label for="hex_input2">Input Background Hex Code Here</label>
+
+                    <button type="button" id="change_color_button">Update colors!</button>
+
+                    <button type="button" id="invert_button">Flip the color pallete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
