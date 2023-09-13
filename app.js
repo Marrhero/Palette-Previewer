@@ -30,11 +30,13 @@ var isHex = false;
 rgbRadio.addEventListener("click", ()=>{
 
   console.log("rgb radio registered");
+  isHex = false;
   document.getElementById("hex_div").style.display = "none";
   document.getElementById("rgb_div").style.display = "block";
 })
 
 hexRadio.addEventListener("click", ()=>{
+  isHex = true;
   console.log("hex radio registered");
   document.getElementById("rgb_div").style.display = "none";
   document.getElementById("hex_div").style.display = "block";
