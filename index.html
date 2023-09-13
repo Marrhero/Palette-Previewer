@@ -25,7 +25,7 @@
                     <button type="button" id="title_button">Update title!</button>
                 </div>
                 <div class="sample_body">
-                    <input type="text" name="sample_body" id="sample_body_input">
+                    <textarea name="sample_body" id="sampe_body_input"  rows="10"></textarea>
                     <button type="button" id="body_button">Update text!</button>
                 </div>
 
@@ -42,12 +42,31 @@
             
             <div class="color_input">
                 <div class="input_field">
-                    <div>#<input type="text" placeholder="#5c5c5c" name="color_hex" id="hex_input"></div>
-                    <label for="hex_input">Input Text Hex Code Here</label>        
 
-                    <div>#<input type="text" placeholder="#5c5c5c" name="color_hex2" id="hex_input2"></div>
-                    <label for="hex_input2">Input Background Hex Code Here</label>
+                    <div> 
+                        <label for="type">Hex</label>
+                        <input type="radio" name="type" id="hex">
+                        <label for="type">RGB</label>
+                        <input type="radio" name="type" id="rgb" checked>
+                    </div>
 
+                    <div id="rgb_div">
+                        <div><input type="color" name="color_rgb" id="rgb_input"></div>
+                        <label for="rgb_input">Choose Text color</label>        
+
+                        <div><input type="color" name="color_rgb2" id="rgb_input2"></div>
+                        <label for="rgb_input2">Choose Background color</label>
+                    </div>
+                </div>
+
+                <div class="input_field">
+                    <div id="hex_div">
+                        <div>#<input type="text" placeholder="5c5c5c" name="color_hex" id="hex_input"></div>
+                        <label for="hex_input">Input Text Hex Code Here</label>        
+
+                        <div>#<input type="text" placeholder="5c5c5c" name="color_hex2" id="hex_input2"></div>
+                        <label for="hex_input2">Input Background Hex Code Here</label>
+                    </div>
                     <button type="button" id="change_color_button">Update colors!</button>
 
                     <button type="button" id="invert_button">Flip the color pallete</button>
